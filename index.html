@@ -3,24 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя первая страница</title>
+    <title>Резюме</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f2f2f2;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1604000804817-c3cc5ed9f2e6') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
         h1 {
-            color: #333;
+            text-align: center;
         }
-        p {
-            color: #555;
+
+        .section {
+            margin-bottom: 20px;
         }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .list li {
+                margin: 5px 0;
+            }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать на мою страницу!</h1>
-    <p>Это пример простой HTML странички.</p>
-    <a href="#">Нажмите здесь</a>
+    <div class="container">
+        <h1>Ваше Имя</h1>
+        <div class="contact-info">
+            <p>Email: ваш.email@example.com</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Город: Ваш Город</p>
+        </div>
+        <div class="section">
+            <h2>Опыт работы</h2>
+            <ul class="list">
+                <li><strong>Должность 1</strong> - Название компании (Год начала - Год окончания)</li>
+                <li><strong>Должность 2</strong> - Название компании (Год начала - Год окончания)</li>
+                <li><strong>Должность 3</strong> - Название компании (Год начала - Год окончания)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Образование</h2>
+            <ul class="list">
+                <li><strong>Степень 1</strong> - Название учебного заведения (Год окончания)</li>
+                <li><strong>Степень 2</strong> - Название учебного заведения (Год окончания)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Навыки</h2>
+            <ul class="list">
+                <li>Навык 1</li>
+                <li>Навык 2</li>
+                <li>Навык 3</li>
+                <li>Навык 4</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
